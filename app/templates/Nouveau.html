@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action = "/confirmation" method="POST">
+    <main>
+<h3>Remplissez les données du patient</h3>
+<div><label for="identifier"> Identifiant</label>
+<input type="text" name="identifier"placeholder="Identifiant"></div>
+
+<div><label for="name"> Nom</label>
+<input type="text" name="name"placeholder="Nom"></div>
+
+<div><label for="gender"> Genre</label>
+<input type="text" name="gender"placeholder="male | female | other | unknown"></div>
+
+<div><label for="birthDate"> Date de naissance</label>
+<input type="text" name="birthDate"placeholder="JJ/MM/AAAA"></div>
+
+<div><label for="adress"> Adresse</label>
+<input type="text" name="address"></div>
+
+<p>Vaccins effectué</p>
+
+  <div> Covid-19 :
+    <input type="radio" id="waiting" name="covid" value="waiting">
+    <label for="waiting">En attente</label>
+
+    <input type="radio" id="realised" name="covid" value="realokised">
+    <label for="réalisé">Réalisé</label>
+  </div>
+
+  <div> Diphtérie, tétanos et poliomyélite :
+    <input type="radio" id="waiting" name="dtp" value="waiting">
+    <label for="waiting">En attente</label>
+
+    <input type="radio" id="realised" name="dtp" value="realised">
+    <label for="réalisé">Réalisé</label>
+  </div>
+
+  <div> Coqueluche :
+    <input type="radio" id="waiting" name="Coqueluche" value="waiting">
+    <label for="waiting">En attente</label>
+
+    <input type="radio" id="realised" name="Coqueluche" value="realised">
+    <label for="réalisé">Réalisé</label>
+  </div>
+
+  <div> Rubéole :
+    <input type="radio" id="waiting" name="Rubeole" value="waiting">
+    <label for="waiting">En attente</label>
+
+    <input type="radio" id="realised" name="Rubeole" value="realised">
+    <label for="réalisé">Réalisé</label>
+  </div>
+
+  <div> Hépatite B :
+    <input type="radio" id="waiting" name="Hepatite" value="waiting">
+    <label for="waiting">En attente</label>
+
+    <input type="radio" id="realised" name="Hepatite" value="realised">
+    <label for="réalisé">Réalisé</label>
+  </div>
+
+  <div> Rougeole :
+    <input type="radio" id="waiting" name="Rougeole" value="waiting">
+    <label for="waiting">En attente</label>
+
+    <input type="radio" id="realised" name="Rougeole" value="realised">
+    <label for="réalisé">Réalisé</label>
+  </div>
+
+  <div> Oreillons  :
+    <input type="radio" id="waiting" name="Oreillons" value="waiting">
+    <label for="waiting">En attente</label>
+
+    <input type="radio" id="realised" name="Oreillons" value="realised">
+    <label for="réalisé">Réalisé</label>
+  </div>
+
+<div><input type="submit" value="Suivant"/></div>
+
+</main>
+<form>
+<body>
+<html>

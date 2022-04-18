@@ -1,0 +1,52 @@
+{
+  "resourceType" : "MedicationRequest",
+  "identifier" : "",
+  "status" : "", 
+  "statusReason" : "", 
+  "intent" : "", 
+  "category" : "",
+  "priority" : "", 
+  "doNotPerform" : "", 
+  "reportedBoolean" :"",
+  "reportedReference" : "",
+  "medicationCodeableConcept" : "",
+  "medicationReference" : "",
+  "subject" : "", 
+  "encounter" : "", 
+  "supportingInformation" : "",
+  "authoredOn" : "", 
+  "requester" : "", 
+  "performer" : "",
+  "performerType" : "", 
+  "recorder" : "", 
+  "reasonCode" : "", 
+  "reasonReference" : "", 
+  "instantiatesCanonical" : "", 
+  "instantiatesUri" : "", 
+  "basedOn" : "", 
+  "groupIdentifier" :"", 
+  "courseOfTherapyType" : "", 
+  "insurance" : "", 
+  "note" : "", 
+  "dosageInstruction" :"", 
+  "dispenseRequest" : [{
+    "initialFill" : { 
+      "quantity" : "",
+      "duration" : ""
+    },
+    "dispenseInterval" :"",
+    "validityPeriod" : "",
+    "numberOfRepeatsAllowed" : "", 
+    "quantity" : "",
+    "expectedSupplyDuration" : "",
+    "performer" :""
+  }],
+  "substitution" : { 
+    "allowedBoolean" : "",
+    "allowedCodeableConcept" : "",
+    "reason" : ""
+  },
+  "priorPrescription" : "", 
+  "detectedIssue" : "", 
+  "eventHistory" : "" 
+}

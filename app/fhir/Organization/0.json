@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Organization",
+  "identifier" : "1984673",
+  "active" : true,
+  "type" : "Health",
+  "name" : "HL7_test",
+  "alias" : ["HL7_test1"],
+  "telecom" : "0168524897",
+  "address" : "122 Rue Paul Armangot",
+  "partOf" : "AP-HP",
+  "contact" : [{
+    "purpose" : "Big Boss",
+    "name" : "Soilahou Assani",
+    "telecom" : [{ 
+      "telephone": "0668706897",
+      "email": "soilahou.assani@gmail.com"
+     }],
+    "address" : "Marseille quartier nord ca bouge pas"
+  }],
+  "endpoint" : ""
+}

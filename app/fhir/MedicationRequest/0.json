@@ -1,0 +1,56 @@
+{
+  "resourceType" : "MedicationRequest",
+  "identifier" : [{ Identifier }],
+  "status" : "<code>", 
+  "statusReason" : { CodeableConcept }, 
+  "intent" : "<code>", 
+  "category" : [{ CodeableConcept }],
+  "priority" : "<code>", 
+  "doNotPerform" : <boolean>, 
+  "reportedBoolean" : <boolean>,
+  "reportedReference" : { Reference(Patient|Practitioner|PractitionerRole|
+   RelatedPerson|Organization) },
+  "medicationCodeableConcept" : { CodeableConcept },
+  "medicationReference" : { Reference(Medication) },
+  "subject" : { Reference(Patient|Group) }, 
+  "encounter" : { Reference(Encounter) }, 
+  "supportingInformation" : [{ Reference(Any) }],
+  "authoredOn" : "<dateTime>", 
+  "requester" : { Reference(Practitioner|PractitionerRole|Organization|
+   Patient|RelatedPerson|Device) }, 
+  "performer" : { Reference(Practitioner|PractitionerRole|Organization|
+   Patient|Device|RelatedPerson|CareTeam) },
+  "performerType" : { CodeableConcept }, 
+  "recorder" : { Reference(Practitioner|PractitionerRole) }, 
+  "reasonCode" : [{ CodeableConcept }], 
+  "reasonReference" : [{ Reference(Condition|Observation) }], 
+  "instantiatesCanonical" : ["<canonical>"], 
+  "instantiatesUri" : ["<uri>"], 
+  "basedOn" : [{ Reference(CarePlan|MedicationRequest|ServiceRequest|
+   ImmunizationRecommendation) }], 
+  "groupIdentifier" : { Identifier }, 
+  "courseOfTherapyType" : { CodeableConcept }, 
+  "insurance" : [{ Reference(Coverage|ClaimResponse) }], 
+  "note" : [{ Annotation }], 
+  "dosageInstruction" : [{ Dosage }], 
+  "dispenseRequest" : {
+    "initialFill" : { 
+      "quantity" : { Quantity(SimpleQuantity) },
+      "duration" : { Duration }
+    },
+    "dispenseInterval" : { Duration },
+    "validityPeriod" : { Period },
+    "numberOfRepeatsAllowed" : "<unsignedInt>", 
+    "quantity" : { Quantity(SimpleQuantity) },
+    "expectedSupplyDuration" : { Duration },
+    "performer" : { Reference(Organization) }
+  },
+  "substitution" : { 
+    "allowedBoolean" : <boolean>,
+    "allowedCodeableConcept" : { CodeableConcept },
+    "reason" : { CodeableConcept }
+  },
+  "priorPrescription" : { Reference(MedicationRequest) }, 
+  "detectedIssue" : [{ Reference(DetectedIssue) }], 
+  "eventHistory" : [{ Reference(Provenance) }] 
+}
